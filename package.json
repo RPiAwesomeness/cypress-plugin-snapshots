@@ -1,11 +1,11 @@
 {
   "name": "cypress-plugin-snapshots",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "description": "Cypress snapshot functionality for data",
-  "homepage": "https://github.com/meinaart/cypress-plugin-snapshots",
+  "homepage": "https://github.com/RPiAwesomeness/cypress-plugin-snapshots",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meinaart/cypress-plugin-snapshots.git"
+    "url": "https://github.com/RPiAwesomeness/cypress-plugin-snapshots.git"
   },
   "types": "types/index.d.ts",
   "files": [
@@ -21,14 +21,14 @@
     "node": ">=8.2.1"
   },
   "bugs": {
-    "url": "https://github.com/meinaart/cypress-plugin-snapshots/issues"
+    "url": "https://github.com/RPiAwesomeness/cypress-plugin-snapshots/issues"
   },
   "keywords": [
     "cypress",
     "cypress-io",
     "cypress-plugin"
   ],
-  "author": "Meinaart van Straalen",
+  "author": "Nathanael Olander",
   "license": "MIT",
   "scripts": {
     "ci:test": "jest & npm --prefix cypress run ci:test",
@@ -41,7 +41,7 @@
     "test": "jest & npm --prefix cypress run cy:run"
   },
   "dependencies": {
-    "diff2html": "^2.7.0",
+    "diff2html": "^3.4.31",
     "fs-extra": "^7.0.1",
     "image-size": "^0.7.2",
     "jimp": "^0.16.1",
@@ -55,11 +55,10 @@
     "sanitize-filename": "^1.6.1",
     "socket.io": "^2.2.0",
     "socket.io-client": "^2.2.0",
-    "source-map-support": "^0.5.10",
-    "unidiff": "1.0.2"
+    "source-map-support": "^0.5.10"
   },
   "peerDependencies": {
-    "cypress": "^4.5.0"
+    "cypress": "^11.0.0"
   },
   "devDependencies": {
     "eslint": "^5.14.1",
@@ -68,8 +67,8 @@
     "eslint-plugin-cypress": "^2.2.1",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-jest": "^22.3.0",
-    "jest": "^24.1.0",
-    "rewire": "^4.0.1"
+    "jest": "^29.4.2",
+    "rewire": "^6.0.0"
   },
   "prettier": {
     "printWidth": 100,

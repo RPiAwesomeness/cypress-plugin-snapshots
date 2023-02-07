@@ -6,7 +6,6 @@ const {
 } = require('lodash');
 const { initUi } = require('./src/ui');
 const commands = require('./src/commands/index');
-const cleanUpSnapshots = require('./src/utils/commands/cleanupSnapshots');
 const getConfig = require('./src/utils/commands/getConfig');
 const { NO_LOG } = require('./src/constants');
 
@@ -38,7 +37,7 @@ function initCommands() {
       if (window.top.closeSnapshotModal) {
         window.top.closeSnapshotModal();
       }
-    } catch(ex) {
+    } catch (ex) {
       window.console.error(ex);
     }
   }
@@ -49,13 +48,8 @@ function initCommands() {
 
   // Close snapshot modal and reset image files cache before all test restart
   Cypress.on('window:before:unload', () => {
-    closeSnapshotModal()
-    clearFileCache()
-  });
-
-  // Clean up unused snapshots
-  after(() => {
-    cleanUpSnapshots();
+    closeSnapshotModal();
+    clearFileCache();
   });
 
   // Add commands

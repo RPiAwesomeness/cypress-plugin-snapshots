@@ -5,7 +5,7 @@ const tasks = require('./src/tasks/');
 
 /**
  * Initializes the plugin:
- * - registers tasks for `toMatchSnapshot` and `toMatchImageSnapshot`.
+ * - registers tasks for `toMatchImageSnapshot`.
  * - Make config accessible via `Cypress.env`.
  * @param {Function} on - Method to register tasks
  * @param {Object} globalConfig - Object containing global Cypress config

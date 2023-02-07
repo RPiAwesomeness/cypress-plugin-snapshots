@@ -5,7 +5,6 @@ const {
   GET_FILE,
 } = require('./tasks/taskNames');
 const {
-  SAVE_TEXT,
   SAVE_IMAGE,
 } = require('./server/actions');
 const {
@@ -62,7 +61,7 @@ function initUi() {
         var socket = io('${getServerUrl(config)}');
 
         return (data) => {
-          const action = data.isImage ? '${SAVE_IMAGE}' : '${SAVE_TEXT}';
+          const action = ${SAVE_IMAGE};
           socket.emit(action, data);
         };
       })();
