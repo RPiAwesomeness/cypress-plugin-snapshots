@@ -1,6 +1,6 @@
 {
   "name": "cypress-plugin-snapshots",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Cypress snapshot functionality for data",
   "homepage": "https://github.com/RPiAwesomeness/cypress-plugin-snapshots",
   "repository": {
